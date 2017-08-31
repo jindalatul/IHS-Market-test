@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Stocks APP</title>
+    <link rel="stylesheet" media="all" href="css/style.css">
+	<script src="js/data.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="js/script.js"></script>
+</head>
+<body>
+<div id="quote-module">
+  <div class="line"></div>
+    <h1>Microsoft Corp</h1>
+	  <ul>
+		<li>
+      <span data="lastprice"></span>
+      <span class="green" data="change"></span></li>
+		<li><span>Range</span>
+      <span data="range"></span></li>
+		<li><span>Open</span>
+      <span data="open"></span></li>
+		<li><span>Volume</span>
+      <span data="volume"></span></li>
+		<li><span>Market Cap</span>
+      <span data="cap"></span></li>
+		<li><span class="time" data="time"></span></li>
+		<li>
+		<form>
+			<div class="text">
+				<input type="text" id="stock" name="stock" value="MSFT" />
+			</div>
+			<div class="button">
+					<input type="button" id="quote" name="quote"value="Get New Quote" />
+			</div>
+		</form>
+		</li>		
+	  </ul>
+</div>
+</body>
+</html>
